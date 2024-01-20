@@ -1,3 +1,13 @@
+#
+# Copyright (C) 2021-present by TeamYukki@Github, < https://github.com/TeamYukki >.
+#
+# This file is part of < https://github.com/TeamYukki/YukkiMusicBot > project,
+# and is released under the "GNU v3.0 License Agreement".
+# Please see < https://github.com/TeamYukki/YukkiMusicBot/blob/master/LICENSE >
+#
+# All rights reserved.
+#
+
 import os
 import re
 import textwrap
@@ -8,8 +18,7 @@ from PIL import (Image, ImageDraw, ImageEnhance, ImageFilter,
                  ImageFont, ImageOps)
 from youtubesearchpython.__future__ import VideosSearch
 
-from BRANDEDKING import app
-from config import YOUTUBE_IMG_URL
+from config import MUSIC_BOT_NAME, YOUTUBE_IMG_URL
 
 
 def changeImageSize(maxWidth, maxHeight, image):
@@ -17,10 +26,11 @@ def changeImageSize(maxWidth, maxHeight, image):
     heightRatio = maxHeight / image.size[1]
     newWidth = int(widthRatio * image.size[0])
     newHeight = int(heightRatio * image.size[1])
-    return image.resize((newWidth, newHeight))
+    newImage = image.resize((newWidth, newHeight))
+    return newImage
 
 
-async def get_thumb(videoid):
+async def gen_thumb(videoid):
     if os.path.isfile(f"cache/{videoid}.png"):
         return f"cache/{videoid}.png"
 
@@ -74,17 +84,17 @@ async def get_thumb(videoid):
         logo = ImageOps.expand(logo, border=15, fill="white")
         background.paste(logo, (50, 100))
         draw = ImageDraw.Draw(background)
-        font = ImageFont.truetype("BRANDEDKING/assets/font2.ttf", 40)
-        font2 = ImageFont.truetype("BRANDEDKING/assets/font2.ttf", 70)
-        arial = ImageFont.truetype("BRANDEDKING/assets/font2.ttf", 30)
-        name_font = ImageFont.truetype("BRANDEDKING/assets/font.ttf", 30)
+        font = ImageFont.truetype("assets/font2.ttf", 40)
+        font2 = ImageFont.truetype("assets/font2.ttf", 70)
+        arial = ImageFont.truetype("assets/font2.ttf", 30)
+        name_font = ImageFont.truetype("assets/font.ttf", 30)
         para = textwrap.wrap(title, width=32)
         j = 0
         draw.text(
-            (5, 5), f"{'  L2R MUSIC '}", fill="white", font=name_font
+            (5, 5), f"{MUSIC_BOT_NAME}", fill="white", font=name_font
         )
         draw.text(
-            (600, 250),
+            (600, 150),
             "NOW PLAYING",
             fill="white",
             stroke_width=2,
@@ -114,19 +124,19 @@ async def get_thumb(videoid):
                 )
 
         draw.text(
-            (650, 600),
+            (600, 450),
             f"Views : {views[:23]}",
             (255, 255, 255),
             font=arial,
         )
         draw.text(
-            (650, 600),
+            (600, 500),
             f"Duration : {duration[:23]} Mins",
             (255, 255, 255),
             font=arial,
         )
         draw.text(
-            (650, 600),
+            (600, 550),
             f"Channel : {channel}",
             (255, 255, 255),
             font=arial,
