@@ -82,7 +82,7 @@ def stream_markup_timer(_, chat_id, played, dur):
                 text="⛩️ Gʀᴏᴜᴘꨄ︎ ⛩️", url="https://t.me/MUSICBOT_OWNER",
             ),
         ],
-        [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="")],
+        [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
     ]
     return buttons
 
@@ -112,7 +112,7 @@ def stream_markup(_, chat_id):
                 text="⛩️ Gʀᴏᴜᴘꨄ︎ ⛩️", url="https://t.me/MUSICBOT_OWNER",
             ),
         ],
-        [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="")],
+        [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
     ]
     return buttons
 
