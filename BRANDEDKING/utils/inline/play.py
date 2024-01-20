@@ -76,10 +76,10 @@ def stream_markup_timer(_, chat_id, played, dur):
         ],
         [
             InlineKeyboardButton(
-                 text="💮︎ ᴄᴘᴀɴɴᴇʟ", url=config.SUPPORT_CHANNEL,
+                 text="💮︎ ᴄᴘᴀɴɴᴇʟ", url="https://t.me/ALL_QUIZ_TAME",
             ),
             InlineKeyboardButton(
-                text="⛩️ Gʀᴏᴜᴘꨄ︎ ⛩️", url=config.SUPPORT_GROUP,
+                text="⛩️ Gʀᴏᴜᴘꨄ︎ ⛩️", url="https://t.me/MUSICBOT_OWNER",
             ),
         ],
         [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
@@ -106,10 +106,10 @@ def stream_markup(_, chat_id):
         ],
         [
             InlineKeyboardButton(
-                 text="💮︎ ᴄᴘᴀɴɴᴇʟ", url=config.SUPPORT_CHANNEL,
+                 text="💮︎ ᴄᴘᴀɴɴᴇʟ", url="https://t.me/ALL_QUIZ_TAME",
             ),
             InlineKeyboardButton(
-                text="⛩️ Gʀᴏᴜᴘꨄ︎ ⛩️", url=config.SUPPORT_GROUP,
+                text="⛩️ Gʀᴏᴜᴘꨄ︎ ⛩️", url="url="https://t.me/MUSICBOT_OWNER",
             ),
         ],
         [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
