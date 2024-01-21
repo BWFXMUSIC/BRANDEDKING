@@ -2,11 +2,10 @@ from BRANDEDKING import app
 import asyncio
 import random
 from pyrogram import Client, filters
-from pyrogram.enums import ChatType, ChatMemberStatus
 from pyrogram.errors import UserNotParticipant
 from pyrogram.types import ChatPermissions
 
-    spam_chats = []
+spam_chats = []
 
 EMOJI = ["🦋🦋🦋🦋🦋"]
 
@@ -167,7 +166,7 @@ async def cancel_spam(client, message):
     else:
         if participant.status in ("administrator", "creator"):
             is_admin = True
-    if not is_admin: = True
+    if not is_admin:
         return await message.reply("This command is only for admins. You can't use this command.")
     else:
         try:
