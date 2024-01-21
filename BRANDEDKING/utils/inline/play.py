@@ -68,7 +68,7 @@ def stream_markup_timer(_, chat_id, played, dur):
         ],
         [
             InlineKeyboardButton(
-                text="🌼 ᴘʟᴀʏʟɪsᴛs", callback_data=f"add_playlist {videoid}",
+                text="🌼 ᴘʟᴀʏʟɪsᴛs", url="",
             ),
             InlineKeyboardButton(
                 text="✨ 𝐎ωиєя ⏎", url="https://t.me/L2R_KING0",
@@ -76,10 +76,10 @@ def stream_markup_timer(_, chat_id, played, dur):
         ],
         [
             InlineKeyboardButton(
-                 text="💮︎ ᴄᴘᴀɴɴᴇʟ", url="https://t.me/ALL_QUIZ_TAME",
+                 text="💮︎ ᴄᴘᴀɴɴᴇʟ", url="https://t.me/SHAYRI_CHANNEL1",
             ),
             InlineKeyboardButton(
-                text="⛩️ Gʀᴏᴜᴘꨄ︎ ⛩️", url="https://t.me/MUSICBOT_OWNER",
+                text="⛩️ Gʀᴏᴜᴘꨄ︎ ⛩️", url="https://t.me/BWF_MUSIC1",
             ),
         ],
         [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
@@ -98,7 +98,7 @@ def stream_markup(_, chat_id):
         ],
         [
             InlineKeyboardButton(
-                text="🌼 ᴘʟᴀʏʟɪsᴛs", callback_data=f"add_playlist {videoid}",
+                text="🌼 ᴘʟᴀʏʟɪsᴛs", url="",
             ),
             InlineKeyboardButton(
                 text="✨ 𝐎ωиєя ⏎", url="https://t.me/L2R_KING0",
@@ -106,10 +106,10 @@ def stream_markup(_, chat_id):
         ],
         [
             InlineKeyboardButton(
-                 text="💮︎ ᴄᴘᴀɴɴᴇʟ", url="https://t.me/ALL_QUIZ_TAME",
+                 text="💮︎ ᴄᴘᴀɴɴᴇʟ", url="https://t.me/SHAYRI_CHANNEL1",
             ),
             InlineKeyboardButton(
-                text="⛩️ Gʀᴏᴜᴘꨄ︎ ⛩️", url="https://t.me/MUSICBOT_OWNER",
+                text="⛩️ Gʀᴏᴜᴘꨄ︎ ⛩️", url="https://t.me/BWF_MUSIC1",
             ),
         ],
         [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
