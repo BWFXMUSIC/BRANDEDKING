@@ -33,7 +33,7 @@ def stream_markup_timer(_, chat_id, played, dur):
     percentage = (played_sec / duration_sec) * 100
     tgn = math.floor(percentage)
     if 0 < tgn <= 10:
-        bar = "ʙω‌ғ▇▇▇▇▇▇▇▇▇"
+        bar = "🏩▇▇▇▇▇▇▇▇▇"
     elif 10 < tgn < 20:
         bar = "▇💨▇▇▇▇▇▇▇▇"
     elif 20 <= tgn < 30:
@@ -68,7 +68,7 @@ def stream_markup_timer(_, chat_id, played, dur):
         ],
         [
             InlineKeyboardButton(
-                text="🌼 ᴘʟᴀʏʟɪsᴛs", url="https://t.me/BWF_K_WORLD",
+                text="🌼 ᴘʟᴀʏʟɪsᴛs", callback_data=f"add_playlist {videoid}",
             ),
             InlineKeyboardButton(
                 text="✨ 𝐎ωиєя ⏎", url="https://t.me/L2R_KING0",
@@ -98,7 +98,7 @@ def stream_markup(_, chat_id):
         ],
         [
             InlineKeyboardButton(
-                text="🌼 ᴘʟᴀʏʟɪsᴛs", url="https://t.me/BWF_K_WORLD",
+                text="🌼 ᴘʟᴀʏʟɪsᴛs", callback_data=f"add_playlist {videoid}",
             ),
             InlineKeyboardButton(
                 text="✨ 𝐎ωиєя ⏎", url="https://t.me/L2R_KING0",
