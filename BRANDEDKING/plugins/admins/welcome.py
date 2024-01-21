@@ -3,7 +3,7 @@ from pyrogram import Client
 from pyrogram.types import Message
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
-from BRANDEDKING import app  
+from  import app  
 
 photo = [
     "https://i.postimg.cc/g0j4wY4H/20231127-214133.png",
