@@ -112,7 +112,7 @@ async def mentionall(client, message):
         is_admin = False
     else:
         if participant.status in ("administrator", "creator"):
-            is_admin = True
+            is_admin:
     if not is_admin:
         return await message.reply("Only admin can use this command!")
 
